@@ -1,293 +1,839 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="keywords" content="talmeedo, talmido, disciple, apostle, men, malankara, orthodox, indian, christian, faith, basketball" />
-  <meta name="description" content="The First Talmeedo Orthodox Basketball Tournament Official Website" />
-  <title>Talmeedo Orthodox Basketball Tournament 2025</title>
-  <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="talmeedo, talmido, disciple, apostle, men, malankara, orthodox, indian, christian, faith, basketball, tournament" />
+  <meta name="description" content="Official Website for the Talmeedo Orthodox Basketball Tournament 2026" />
+  <title>Talmeedo Basketball Tournament 2026 | Official Site</title>
+
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/norwester" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>.font-norwester { font-family: 'Norwester', sans-serif; }</style></head><body class="flex flex-col items-center justify-between h-full bg-slate-900 text-white border-t-4 border-amber-500">
-    <div class="w-full max-w-6xl px-6 py-8">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-        
-        <!-- Logo Left -->
-        <div class="md:w-1/4 flex justify-start">
-        <img src="assets/talmeedo_bw_transparent.png" alt="Talmeedo Logo" class="w-32">
-        </div>
 
-        <!-- Center: Event Title and Info -->
-        <div class="text-center mb-6 md:w-full">
-        <h1 class="text-3xl md:text-4xl font-bold mb-2 text-blue-300 font-norwester">Talmeedo Orthodox Basketball Tournament</h1>
-        <p class="text-lg md:text-xl">October 11, 2025 | 8:00 AM - 6:00 PM</p>
-        <p class="text-lg md:text-xl">Warminster, PA</p>
-        </div>
+  <style>
+    .font-norwester {
+      font-family: Norwester, sans-serif;
+    }
+    html {
+      scroll-padding-top: 80px;
+    }
+    .bg-court-texture {
+      background-color: #090d16;
+      background-image: 
+        radial-gradient(circle at 50% 0, rgba(245, 158, 11, 0.15) 0, transparent 60%),
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 40px 40px, 40px 40px;
+    }
+    .glow-amber {
+      box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.4);
+    }
+    details[open] summary svg {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+
+<body id="home" class="flex flex-col bg-court-texture border-amber-500 border-t-8 font-sans md:pt-20 min-h-screen pt-16 text-white">
+
+  <!-- TOP NAVIGATION BAR -->
+  <div class="shadow-2xl bg-slate-950 border-amber-500/50 border-b-2 left-0 fixed px-4 py-2.5 right-0 top-0 z-50">
+    <div class="flex items-center bg-slate-950 justify-between gap-2 flex-row max-w-7xl mx-auto relative z-20">
+      <div class="flex items-center gap-3">
+        <button id="menu-toggle" type="button" aria-label="Toggle Navigation Menu" class="border text-amber-400 border-amber-500/30 cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-500 hover:border-amber-500 hover:text-amber-300 p-1.5 rounded-lg transition">
+          <svg id="icon-hamburger" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+          </svg>
+          <svg id="icon-close" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+          </svg>
+        </button>
+
+        <span class="uppercase font-black tracking-wider bg-rose-500/20 text-rose-400 border border-rose-500/30 items-center gap-1.5 inline-flex px-2.5 py-0.5 rounded text-xs">
+          <span class="animate-pulse">●</span> REGISTRATION CLOSED
+        </span>
+        <span class="font-norwester hidden sm:inline text-gray-300 text-sm tracking-wide">TALMEEDO 2026 • PHILLY</span>
+      </div>
+
+      <a href="#schedule" class="uppercase font-black tracking-widest transition bg-slate-900 border border-slate-700 hover:bg-slate-800 text-amber-400 inline-flex items-center md:text-sm px-4 py-1.5 rounded-lg shadow-lg text-xs">
+        VIEW SCHEDULE
+      </a>
     </div>
 
-    <!-- Description Below Full Width -->
-    <div class="mt-3 text-center">
-        <p class="text-lg">
-        A thrilling day of basketball, community, and faith as we come together for the first Talmeedo Men's Ministry Orthodox Basketball Tournament.
+    <!-- SLIDE-DOWN NAVIGATION MENU -->
+    <nav id="nav-menu" class="w-full bg-slate-950 -translate-y-full absolute border-amber-500/50 border-b-2 duration-300 ease-in-out left-0 opacity-0 pointer-events-none shadow-2xl top-full transform transition-all z-10">
+      <ul class="flex flex-col bg-slate-950 divide-slate-800 divide-y font-norwester max-w-7xl mx-auto text-center">
+        <li><a class="uppercase font-black tracking-widest hover:bg-amber-500 hover:text-slate-950 block nav-link py-4 text-base text-gray-200 transition" href="#home">Home</a></li>
+        <li><a class="uppercase font-black tracking-widest hover:bg-amber-500 hover:text-slate-950 block nav-link py-4 text-base text-gray-200 transition" href="#about">About</a></li>
+        <li><a class="uppercase font-black tracking-widest hover:bg-amber-500 hover:text-slate-950 block nav-link py-4 text-base text-gray-200 transition" href="#teams">Teams</a></li>
+        <li><a class="uppercase font-black tracking-widest hover:bg-amber-500 hover:text-slate-950 block nav-link py-4 text-base text-gray-200 transition" href="#schedule">Schedule</a></li>
+        <li><a class="uppercase font-black tracking-widest hover:bg-amber-500 hover:text-slate-950 block nav-link py-4 text-base text-gray-200 transition" href="#contacts">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- HERO HEADER -->
+  <header class="w-full px-6 max-w-7xl mx-auto pb-8 pt-6 relative space-y-6">
+    <!-- COUNTDOWN TIMER -->
+    <div class="shadow-2xl relative border-2 rounded-2xl bg-slate-950 border-slate-800 p-6">
+      <div class="uppercase font-black tracking-widest text-xs px-4 text-slate-950 transform -top-3 -translate-x-1/2 absolute bg-amber-500 font-norwester left-1/2 py-0.5 rounded-full">
+        COUNTDOWN TO TIP-OFF
+      </div>
+      <div id="countdown-container" class="mx-auto max-w-2xl gap-3 grid grid-cols-4 pt-2 sm:gap-6">
+        <div class="border rounded-xl bg-slate-900 border-amber-500/30 p-3 shadow-inner sm:p-5 text-center">
+          <span id="days" class="font-norwester font-black text-amber-400 block sm:text-5xl text-3xl tracking-wider">00</span>
+          <span class="uppercase font-black tracking-widest sm:text-xs text-[10px] text-gray-400">DAYS</span>
+        </div>
+        <div class="border rounded-xl bg-slate-900 border-amber-500/30 p-3 shadow-inner sm:p-5 text-center">
+          <span id="hours" class="font-norwester font-black text-amber-400 block sm:text-5xl text-3xl tracking-wider">00</span>
+          <span class="uppercase font-black tracking-widest sm:text-xs text-[10px] text-gray-400">HRS</span>
+        </div>
+        <div class="border rounded-xl bg-slate-900 border-amber-500/30 p-3 shadow-inner sm:p-5 text-center">
+          <span id="minutes" class="font-norwester font-black text-amber-400 block sm:text-5xl text-3xl tracking-wider">00</span>
+          <span class="uppercase font-black tracking-widest sm:text-xs text-[10px] text-gray-400">MINS</span>
+        </div>
+        <div class="border rounded-xl bg-slate-900 border-amber-500/30 p-3 shadow-inner sm:p-5 text-center">
+          <span id="seconds" class="font-norwester font-black text-3xl block sm:text-5xl tracking-wider animate-pulse text-white">00</span>
+          <span class="uppercase font-black tracking-widest sm:text-xs text-[10px] text-gray-400">SECS</span>
+        </div>
+      </div>
+      <p id="countdown-status" class="hidden font-black mt-2 text-amber-400 text-center text-xl">THE TOURNAMENT IS LIVE!</p>
+    </div>
+
+    <!-- MAIN BANNER -->
+    <div class="border border-slate-800 flex items-center bg-slate-900 p-6 flex-col gap-8 justify-between lg:flex-row overflow-hidden relative rounded-3xl sm:p-10">
+      <div class="pointer-events-none absolute rounded-full -right-20 -top-20 border-8 border-amber-500/10 h-80 w-80"></div>
+      
+      <div class="flex items-center lg:w-1/3 flex-col justify-center text-center">
+        <img src="assets/talmeedo_bw_transparent.png" alt="Talmeedo Logo" class="transition drop-shadow-[0_10px_20px_rgba(245,158,11,0.2)] duration-300 hover:scale-105 sm:w-52 w-44" />
+      </div>
+
+      <div class="lg:text-left lg:w-2/3 space-y-3 text-center">
+        <div class="uppercase text-xs font-bold text-amber-400 border px-3 py-1 rounded-full tracking-widest bg-slate-800 border-amber-500/30 gap-2 inline-flex items-center">
+          🏀 MALANKARA ORTHODOX BASKETBALL CLASSIC
+        </div>
+        <h1 class="uppercase font-black font-norwester tracking-wide bg-clip-text bg-gradient-to-r from-white leading-tight sm:text-6xl text-4xl text-transparent to-amber-400 via-slate-100">
+          TALMEEDO BASKETBALL <span class="text-amber-500">2026</span>
+        </h1>
+        <p class="font-bold text-gray-300 flex gap-2 items-center justify-center lg:justify-start sm:text-xl text-lg">
+          <span>📅 Saturday, Nov 14, 2026</span>
+          <span class="text-amber-500">•</span>
+          <span>📍 Philadelphia, PA</span>
         </p>
-    </div>
-    </div>
-    
-    <!-- Teams Section -->
-    <section class="w-full max-w-4xl mx-auto px-6 py-8 bg-gray-800 rounded-lg shadow-lg mb-12">
-      <h2 class="text-2xl md:text-3xl font-bold text-amber-500 mb-6 font-norwester text-center">
-        Participating Teams
-      </h2>
+        <p class="text-gray-400 text-sm max-w-xl">
+          Hosted at <span class="font-semibold text-amber-400">The Alan Horwitz "Sixth Man" Center</span> (4250 Wissahickon Ave). Bringing together parishes for elite competition, unity, and faith.
+        </p>
 
-      <div class="overflow-x-auto">
-        <table class="min-w-full divide-y divide-gray-700">
-          <thead class="bg-gray-700">
-            <tr>
-              <th scope="col" class="px-6 py-3 text-left text-sm font-semibold text-orange-300 uppercase tracking-wider">
-                Parish Name
-              </th>
-              <th scope="col" class="px-6 py-3 text-left text-sm font-semibold text-orange-300 uppercase tracking-wider">
-                Jersey Color
-              </th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-gray-600 text-white">
-            <tr>
-              <td class="px-6 py-4">St. George, Fairless Hills</td>
-              <td class="px-6 py-4 bg-black text-white text-center font-bold">Black</td>
-            </tr>
-            <tr>
-              <td class="px-6 py-4">St. Thomas, Long Island</td>
-              <td class="px-6 py-4 bg-blue-900 text-white text-center font-bold">Navy Blue</td>
-            </tr>
-            <tr>
-              <td class="px-6 py-4">St. George, Staten Island</td>
-              <td class="px-6 py-4 bg-red-600 text-white text-center font-bold">Red</td>
-            </tr>
-            <tr>
-              <td class="px-6 py-4">St. Mary's Jackson Heights</td>
-              <td class="px-6 py-4 bg-orange-500 text-black text-center font-bold">Orange</td>
-            </tr>
-            <tr>
-              <td class="px-6 py-4">St. Thekla, Hudson Valley / St. Thomas Yonkers</td>
-              <td class="px-6 py-4 bg-yellow-400 text-black text-center font-bold">Yellow</td>
-            </tr>
-            <tr>
-              <td class="px-6 py-4">St. Mary's Suffern / St. George Port Chester</td>
-              <td class="px-6 py-4 bg-white text-black text-center font-bold">White</td>
-            </tr>
-            <tr>
-              <td class="px-6 py-4">St. Gregorios, Bensalem</td>
-              <td class="px-6 py-4 bg-purple-700 text-white text-center font-bold">Purple</td>
-            </tr>
-            <tr>
-              <td class="px-6 py-4">St. Gregorios, Cherry Lane</td>
-              <td class="px-6 py-4 bg-red-900 text-white text-center font-bold">Maroon</td>
-            </tr>
-            <tr>
-              <td class="px-6 py-4">St. Thomas, Unruh</td>
-              <td class="px-6 py-4 bg-sky-300 text-black text-center font-bold">Light Blue</td>
-            </tr>
-            <tr>
-              <td class="px-6 py-4">DMV</td>
-              <td class="px-6 py-4 bg-amber-900 text-white text-center font-bold">Brown</td>
-            </tr>
-            <tr>
-              <td class="px-6 py-4">St. Luke</td>
-              <td class="px-6 py-4 bg-green-600 text-white text-center font-bold">Green</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="flex lg:justify-start justify-center flex-wrap gap-4 pt-2">
+          <a href="#schedule" class="uppercase font-black transition cursor-pointer shadow-lg text-slate-950 transform bg-amber-500 glow-amber hover:-translate-y-0.5 hover:bg-amber-400 px-6 rounded-xl text-sm tracking-wider flex gap-2 items-center py-3">
+            VIEW TOURNAMENT SCHEDULE
+          </a>
+          <a href="#contacts" class="uppercase font-bold tracking-wider bg-slate-800 border border-slate-700 hover:bg-slate-800 px-6 py-3 rounded-xl text-gray-200 text-sm transition">
+            CONTACT US
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT AREA -->
+  <main class="w-full px-6 max-w-7xl mx-auto flex-grow py-6 space-y-10">
+
+    <!-- HIGHLIGHT CARDS -->
+    <section class="grid grid-cols-1 gap-6 md:grid-cols-3 scroll-mt-24">
+      <div class="border border-slate-800 flex items-center rounded-2xl bg-slate-900 gap-4 p-6 shadow-xl">
+        <div class="border rounded-xl p-4 text-3xl bg-amber-500/10 border-amber-500/20 text-amber-400">🏆</div>
+        <div>
+          <h3 class="uppercase font-norwester text-lg text-white">CHAMPIONSHIP TROPHY</h3>
+          <p class="text-gray-400 text-xs">Competing for diocese bragging rights & gold</p>
+        </div>
+      </div>
+
+      <div class="border border-slate-800 flex items-center rounded-2xl bg-slate-900 gap-4 p-6 shadow-xl">
+        <div class="border rounded-xl p-4 text-3xl bg-blue-500/10 border-blue-500/20 text-blue-400">📍</div>
+        <div>
+          <h3 class="uppercase font-norwester text-lg text-white">SIXTH MAN CENTER</h3>
+          <p class="text-gray-400 text-xs">Premier hardwood basketball facility in Philly</p>
+        </div>
+      </div>
+
+      <div class="border border-slate-800 flex items-center rounded-2xl bg-slate-900 gap-4 p-6 shadow-xl">
+        <div class="border rounded-xl p-4 text-3xl bg-emerald-500/10 border-emerald-500/20 text-emerald-400">👥</div>
+        <div>
+          <h3 class="uppercase font-norwester text-lg text-white">PARISH FELLOWSHIP</h3>
+          <p class="text-gray-400 text-xs">Uniting young men across Orthodox churches</p>
+        </div>
       </div>
     </section>
-    
-    <!-- Schedule Section -->
-<section class="w-full max-w-6xl mx-auto px-6 py-8 bg-gray-800 rounded-lg shadow-lg mb-12">
-  <h2 class="text-2xl md:text-3xl font-bold text-amber-500 mb-6 font-norwester text-center">
-    Tournament Schedule 2025
-  </h2>
-  <p class="text-center text-gray-300 mb-6">
-    Venue: PickupUSA Fitness • Date: October 11, 2025
-  </p>
 
-  <!-- Responsive Table -->
-  <div class="overflow-x-auto">
-    <table class="min-w-full border border-gray-700 text-sm md:text-base">
-      <thead class="bg-gray-700 text-orange-300">
-        <tr>
-          <th class="px-4 py-2 border border-gray-600 text-left">Time</th>
-          <th class="px-4 py-2 border border-gray-600 text-left">Court 1</th>
-          <th class="px-4 py-2 border border-gray-600 text-left">Court 2</th>
-          <th class="px-4 py-2 border border-gray-600 text-left">Court 3</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-700 text-white">
-        <!-- Morning Games -->
-        <tr>
-          <td class="px-4 py-2 border border-gray-600">9:30 AM</td>
-          <td class="px-4 py-2">St Gregorios Cherry Lane vs St Thekla/STOC</td>
-          <td class="px-4 py-2">St Thomas DMV vs St George Staten Island</td>
-          <td class="px-4 py-2">St Thomas, Long Island (STYL) vs St Luke/St Mary’s PA (SLMC)</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 border border-gray-600">10:00 AM</td>
-          <td class="px-4 py-2">St Mary’s/St George (SMSG) vs St Gregorios Bensalem</td>
-          <td class="px-4 py-2">St Mary’s Jackson Heights vs St George Fairless Hills</td>
-          <td class="px-4 py-2"></td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 border border-gray-600">10:30 AM</td>
-          <td class="px-4 py-2">St Thomas, Long Island (STYL) vs St Gregorios Cherry Lane</td>
-          <td class="px-4 py-2">St Thekla/STOC vs St Thomas DMV</td>
-          <td class="px-4 py-2">St George Staten Island vs St Thomas, Unruh</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 border border-gray-600">11:00 AM</td>
-          <td class="px-4 py-2">St Gregorios Bensalem vs St Mary’s Jackson Heights</td>
-          <td class="px-4 py-2">St George Fairless Hills vs St Luke/St Mary’s PA (SLMC)</td>
-          <td class="px-4 py-2"></td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 border border-gray-600">11:30 AM</td>
-          <td class="px-4 py-2"></td>
-          <td class="px-4 py-2"></td>
-          <td class="px-4 py-2">St Thomas, Unruh vs St Mary’s/St George (SMSG)</td>
-        </tr>
-        <!-- Midday -->
-        <tr class="bg-gray-700 text-center text-orange-300 font-semibold">
-          <td colspan="4" class="px-4 py-2">
-            12:00 PM – Prayer, 3 Point Contest, Women’s Free Throw Contest, Create Playoff Bracket Seedings
-          </td>
-        </tr>
-        <!-- Wild Card Games -->
-        <tr>
-          <td class="px-4 py-2 border border-gray-600">1:30 PM</td>
-          <td class="px-4 py-2">Men’s Wild Card: Seed 6 vs 11</td>
-          <td class="px-4 py-2">Men’s Wild Card: Seed 7 vs 10</td>
-          <td class="px-4 py-2">Men’s Wild Card: Seed 8 vs 9</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 border border-gray-600">2:15 PM</td>
-          <td class="px-4 py-2">Quarter Final: Seed (1) vs Lowest Wild Card Winner</td>
-          <td class="px-4 py-2">Quarter Final: Seed (2) vs Next Lowest Wild Card Winner</td>
-          <td class="px-4 py-2"></td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 border border-gray-600">2:45 PM</td>
-          <td class="px-4 py-2">Quarter Final: Seed (4) vs Seed (5)</td>
-          <td class="px-4 py-2">Quarter Final: Seed (3) vs Third Lowest Wild Card Winner</td>
-          <td class="px-4 py-2"></td>
-        </tr>
-        <tr class="bg-gray-700 text-center text-orange-300 font-semibold">
-          <td colspan="4" class="px-4 py-2">3:15 PM – Break, Kids Free Throw Contest</td>
-        </tr>
-        <!-- Semi Finals -->
-        <tr>
-          <td class="px-4 py-2 border border-gray-600">3:45 PM</td>
-          <td class="px-4 py-2">Semi Final A: Winner QF (Court 1) vs Winner QF (Court 1)</td>
-          <td class="px-4 py-2">Semi Final B: Winner QF (Court 2) vs Winner QF (Court 2)</td>
-          <td class="px-4 py-2"></td>
-        </tr>
-        <tr class="bg-gray-700 text-center text-orange-300 font-semibold">
-          <td colspan="4" class="px-4 py-2">4:30 PM – Break</td>
-        </tr>
-        <!-- Final -->
-        <tr>
-          <td class="px-4 py-2 border border-gray-600">5:00 PM</td>
-          <td class="px-4 py-2">Men’s Final: Winner of 3:45 Court 1 vs Winner of 3:45 Court 2</td>
-          <td class="px-4 py-2"></td>
-          <td class="px-4 py-2"></td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2 border border-gray-600">5:45 PM</td>
-          <td class="px-4 py-2">Awards</td>
-          <td class="px-4 py-2"></td>
-          <td class="px-4 py-2"></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
+    <!-- SCHEDULE SECTION -->
+    <section id="schedule" class="border border-slate-800 bg-slate-900 p-6 rounded-3xl scroll-mt-24 shadow-2xl sm:p-8">
+      <div class="mx-auto max-w-2xl mb-8 text-center">
+        <span class="uppercase text-xs font-bold text-amber-400 border px-3 py-1 rounded-full tracking-widest bg-amber-500/10 border-amber-500/20">EVENT ROADMAP</span>
+        <h2 class="uppercase font-black font-norwester tracking-wide mt-2 text-white text-3xl">TOURNAMENT FORMAT</h2>
+        <p class="text-gray-400 mt-1 text-sm">Full match schedules and bracket seeding will be locked closer to gameday.</p>
+      </div>
 
-  <!-- Instagram + Google Maps Embed Section Full Width -->
-  <div class="w-full flex flex-col md:flex-row justify-center items-start gap-6 px-6 mb-8 bg-blue-800">
-    <!-- Google Maps Embed -->
-    <div class="w-full md:w-1/2 flex justify-center">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.9745450834434!2d-75.1030973240648!3d40.20962917147378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6afe462327955%3A0xf3c644eb68f8e6da!2sPickUp%20USA%20Fitness%20Warminster!5e0!3m2!1sen!2sus!4v1754538967401!5m2!1sen!2sus"
-        width="100%" height="581"
-        style="border: 1px solid rgb(219, 219, 219); border-radius: 3px;"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-4">
+        <div class="border border-slate-800 bg-slate-950 transition group rounded-2xl hover:border-amber-500/50 overflow-hidden p-5 relative">
+          <span class="transition absolute bottom-1 font-norwester group-hover:text-amber-500/20 right-3 text-4xl text-slate-800">01</span>
+          <p class="uppercase text-xs font-bold text-amber-400">MORNING</p>
+          <h4 class="font-bold text-white mt-1 text-lg">GROUP STAGE</h4>
+          <p class="text-gray-400 text-xs mt-2">Pool play matches across courts to determine bracket seedings.</p>
+        </div>
+
+        <div class="border border-slate-800 bg-slate-950 transition group rounded-2xl hover:border-amber-500/50 overflow-hidden p-5 relative">
+          <span class="transition absolute bottom-1 font-norwester group-hover:text-amber-500/20 right-3 text-4xl text-slate-800">02</span>
+          <p class="uppercase text-xs font-bold text-amber-400">MIDDAY</p>
+          <h4 class="font-bold text-white mt-1 text-lg">PRAYER & BREAK</h4>
+          <p class="text-gray-400 text-xs mt-2">Group prayer, team lunch, and skills/3-point shootouts.</p>
+        </div>
+
+        <div class="border border-slate-800 bg-slate-950 transition group rounded-2xl hover:border-amber-500/50 overflow-hidden p-5 relative">
+          <span class="transition absolute bottom-1 font-norwester group-hover:text-amber-500/20 right-3 text-4xl text-slate-800">03</span>
+          <p class="uppercase text-xs font-bold text-amber-400">AFTERNOON</p>
+          <h4 class="font-bold text-white mt-1 text-lg">KNOCKOUT ROUNDS</h4>
+          <p class="text-gray-400 text-xs mt-2">Single-elimination playoff bracket for top advancing teams.</p>
+        </div>
+
+        <div class="border border-slate-800 bg-slate-950 transition group rounded-2xl hover:border-amber-500/50 overflow-hidden p-5 relative">
+          <span class="transition absolute bottom-1 font-norwester group-hover:text-amber-500/20 right-3 text-4xl text-slate-800">04</span>
+          <p class="uppercase text-xs font-bold text-amber-400">EVENING</p>
+          <h4 class="font-bold text-white mt-1 text-lg">FINALS & AWARDS</h4>
+          <p class="text-gray-400 text-xs mt-2">Championship match, trophy presentation, and MVP awards.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VENUE MAP & INSTAGRAM MEDIA -->
+    <section class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+      <!-- GOOGLE MAPS EMBED -->
+      <div class="border border-slate-800 flex bg-slate-900 shadow-xl flex-col h-[480px] overflow-hidden rounded-3xl">
+        <div class="flex items-center border-slate-800 bg-slate-950 p-4 justify-between border-b">
+          <div>
+            <h3 class="uppercase font-black font-norwester text-amber-400 text-lg">THE VENUE</h3>
+            <p class="text-gray-400 text-xs">The Alan Horwitz "Sixth Man" Center</p>
+          </div>
+          <span class="border text-amber-400 text-xs font-bold py-1 bg-amber-500/10 border-amber-500/20 px-2 rounded">PHILADELPHIA</span>
+        </div>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.816919220044!2d-75.17367482361324!3d40.012536880140175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b99a99de616d%3A0x57dbc96f75c75b90!2sThe%20Alan%20Horwitz%20%22Sixth%20Man%22%20Center%2C%20Powered%20and%20Operated%20by%20Philadelphia%20Youth%20Basketball!5e0!3m2!1sen!2sus!4v1787318591939!5m2!1sen!2sus" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
+
+      <!-- INSTAGRAM FEED EMBED -->
+      <div class="border border-slate-800 flex bg-slate-900 shadow-xl flex-col h-[480px] overflow-hidden rounded-3xl">
+        <div class="flex items-center border-slate-800 bg-slate-950 p-4 justify-between border-b">
+          <div>
+            <h3 class="uppercase font-black font-norwester text-amber-400 text-lg">TOURNAMENT MEDIA</h3>
+            <p class="text-gray-400 text-xs">Follow @talmeedo for live coverage</p>
+          </div>
+          <a href="https://instagram.com/talmeedo" target="_blank" class="border font-bold py-1 text-xs px-2 rounded bg-pink-500/10 border-pink-500/20 text-pink-400">
+            @TALMEEDO
+          </a>
+        </div>
+        <div class="flex items-center bg-slate-950 justify-center flex-grow p-2">
+          <iframe 
+            id="instagram-embed-0"
+            src="https://www.instagram.com/talmeedo/embed/" 
+            class="instagram-media instagram-media-rendered"
+            style="background: #fff; max-width: 540px; width: 100%; height: 100%; border-radius: 12px; border: none; display: block;" 
+            frameborder="0" 
+            scrolling="no" 
+            allowtransparency="true" 
+            allowfullscreen="true">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION & MISSION MODAL -->
+    <section id="about" class="space-y-8 scroll-mt-24">
+      <div class="border border-slate-800 bg-slate-900 rounded-3xl overflow-hidden relative shadow-2xl p-8 text-center">
+        <div class="pointer-events-none absolute rounded-full -bottom-10 -left-10 bg-amber-500/10 blur-2xl h-36 w-36"></div>
+        <h2 class="uppercase font-black font-norwester tracking-wide sm:text-3xl text-2xl mb-3 text-amber-500">WHAT IS TALMEEDO?</h2>
+        <p class="mx-auto max-w-2xl leading-relaxed mb-6 text-gray-200 text-lg">
+          <span class="font-bold text-blue-300">Talmeedo</span> or <span class="font-bold text-blue-300">Talmido</span> in Syriac (<span class="font-serif text-amber-400">ܬܰܠܡܝܼܕܳܐ</span>) means <span class="italic">disciple</span>. We exist to unite young men across our Orthodox communities through athletics, brotherhood, and spiritual growth.
+        </p>
+
+        <button id="openMissionModal" type="button" class="uppercase font-black tracking-widest hover:bg-amber-500 hover:text-slate-950 bg-slate-950 border border-amber-500/40 cursor-pointer duration-300 gap-2 group hover:border-amber-500 inline-flex items-center px-6 py-3 rounded-xl shadow-lg text-amber-400 text-xs transition-all">
+          <span>DISCOVER OUR MISSION & ROOTS</span>
+          <svg class="transition-transform duration-200 group-hover:translate-x-1 h-4 transform w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+          </svg>
+        </button>
+
+        <dialog id="missionModal" class="w-full backdrop:bg-slate-950/80 bg-transparent outline-none p-4 rounded-3xl max-w-3xl">
+          <div class="flex flex-col bg-slate-900 overflow-hidden relative border-2 border-amber-500/40 rounded-2xl shadow-2xl max-h-[85vh] text-left">
+            <div class="flex items-center border-slate-800 bg-slate-950 p-4 justify-between border-b">
+              <h3 class="uppercase font-norwester text-lg text-amber-400 tracking-wider">TALMEEDO • MISSION & ROOTS</h3>
+              <button id="closeMissionModal" type="button" class="font-bold text-gray-400 cursor-pointer hover:bg-slate-800 hover:text-amber-400 leading-none p-1.5 rounded-lg text-xl transition">✕</button>
+            </div>
+            
+            <div class="leading-relaxed overflow-y-auto p-6 sm:p-8 sm:text-base space-y-6 text-gray-300 text-sm">
+              <div>
+                <h4 class="uppercase font-black font-norwester tracking-wide mb-2 text-amber-400 text-xl">Our Foundation</h4>
+                <p>
+                  <span class="font-bold text-white">Talmeedo</span> (or <span class="font-bold text-white">Talmido</span>) is the Syriac word for <span class="italic text-amber-300">disciple</span>. Rooted in the faith and traditions of the Malankara Orthodox Syrian Church, our ministry was established under the Northeast American Diocese to foster Christian fellowship, spiritual endurance, and brotherhood among young men.
+                </p>
+              </div>
+
+              <div class="border-t border-slate-800 pt-4">
+                <h4 class="uppercase font-black font-norwester tracking-wide mb-2 text-amber-400 text-xl">Purpose & Vision</h4>
+                <ul class="list-disc list-inside space-y-2 text-gray-300">
+                  <li><strong class="text-white">Fellowship & Unity:</strong> Bringing together young men across parish communities through athletic competition and spiritual growth.</li>
+                  <li><strong class="text-white">Discipleship:</strong> Encouraging active commitment to the Orthodox faith and service within the local church.</li>
+                  <li><strong class="text-white">Leadership:</strong> Building accountable, faithful leaders equipped to serve their parishes and wider communities.</li>
+                </ul>
+              </div>
+
+              <div class="border border-slate-800 bg-slate-950 rounded-xl flex flex-col gap-2 items-center justify-between p-4 sm:flex-row text-gray-400 text-xs">
+                <span>Official Ministry of the Northeast American Diocese</span>
+                <a href="https://www.neamericandiocese.org/menu/main-menu/talmeedo/102" target="_blank" rel="noopener noreferrer" class="font-bold text-amber-400 inline-flex items-center gap-1 hover:underline">
+                  <span>View Official Page</span>
+                  <span>↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </dialog>
+      </div>
+    </section>
+
+    <!-- TEAMS & ROSTERS ACCORDION SECTION -->
+    <section id="teams" class="space-y-6 scroll-mt-24">
+      <div class="text-center max-w-2xl mx-auto mb-6">
+        <span class="text-xs font-bold tracking-widest text-amber-400 uppercase bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">CONFIRMED ROSTERS</span>
+        <h2 class="text-3xl font-black text-white font-norwester mt-2 uppercase tracking-wide">TOURNAMENT TEAMS</h2>
+        <p class="text-sm text-gray-400 mt-1">Click any team name below to expand and view the official team roster.</p>
+      </div>
+
+      <div class="max-w-4xl mx-auto space-y-3">
+
+        <!-- St. Andrew’s Long Island -->
+        <details class="team-accordion bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group shadow-lg transition-all duration-200">
+          <summary class="flex items-center justify-between p-5 cursor-pointer font-norwester text-lg text-white uppercase select-none hover:bg-slate-800/60 transition">
+            <span class="flex items-center gap-3">
+              <span class="p-2 rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/20 text-base">🏀</span>
+              St. Andrew’s Long Island
+            </span>
+            <svg class="w-5 h-5 text-amber-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="p-5 bg-slate-950/80 border-t border-slate-800/80">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-sm text-gray-300">
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Aaron Oommen</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Ryan Oommen</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Andrew George</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Noah Zacharia</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Clement Oommen</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Jubil Jacob</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Japhy John</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Nicholas Jacob</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Dylan Jacob</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Jacob Zacharia</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Luke Thomson</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Michael Varughese</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- St. George Staten Island -->
+        <details class="team-accordion bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group shadow-lg transition-all duration-200">
+          <summary class="flex items-center justify-between p-5 cursor-pointer font-norwester text-lg text-white uppercase select-none hover:bg-slate-800/60 transition">
+            <span class="flex items-center gap-3">
+              <span class="p-2 rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/20 text-base">🏀</span>
+              St. George Staten Island
+            </span>
+            <svg class="w-5 h-5 text-amber-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="p-5 bg-slate-950/80 border-t border-slate-800/80">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-sm text-gray-300">
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Justin Thomas</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Aravind Thomas</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Mathew Sabu</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Joel Joy</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Nathan Varghese</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Isaiah Briscoe</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Nick Koshy</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> James Abraham</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- St. George Fairless Hills -->
+        <details class="team-accordion bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group shadow-lg transition-all duration-200">
+          <summary class="flex items-center justify-between p-5 cursor-pointer font-norwester text-lg text-white uppercase select-none hover:bg-slate-800/60 transition">
+            <span class="flex items-center gap-3">
+              <span class="p-2 rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/20 text-base">🏀</span>
+              St. George Fairless Hills
+            </span>
+            <svg class="w-5 h-5 text-amber-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="p-5 bg-slate-950/80 border-t border-slate-800/80">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-sm text-gray-300">
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Will Pothen</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Joel Pothen</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Reuben Varghese</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Joel Chacko</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Jonah Abraham</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Isaiah Mathew</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Joshua Behanan</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Rueben Simon</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Nick Simon</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Alan Varghese</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Elijah Varghese</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- St. Gregorios Bensalem -->
+        <details class="team-accordion bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group shadow-lg transition-all duration-200">
+          <summary class="flex items-center justify-between p-5 cursor-pointer font-norwester text-lg text-white uppercase select-none hover:bg-slate-800/60 transition">
+            <span class="flex items-center gap-3">
+              <span class="p-2 rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/20 text-base">🏀</span>
+              St. Gregorios Bensalem
+            </span>
+            <svg class="w-5 h-5 text-amber-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="p-5 bg-slate-950/80 border-t border-slate-800/80">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-sm text-gray-300">
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Sajeev Ninan</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Aaron Ninan</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Mathew Kurian (Lyn)</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Joe George</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Vivin Varghese</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Benjamin Ninan</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Anthony Kurian</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Mathew George</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Nathan Varghese</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Andrew Kurian</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- St. Mary’s Jackson Heights -->
+        <details class="team-accordion bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group shadow-lg transition-all duration-200">
+          <summary class="flex items-center justify-between p-5 cursor-pointer font-norwester text-lg text-white uppercase select-none hover:bg-slate-800/60 transition">
+            <span class="flex items-center gap-3">
+              <span class="p-2 rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/20 text-base">🏀</span>
+              St. Mary’s Jackson Heights
+            </span>
+            <svg class="w-5 h-5 text-amber-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="p-5 bg-slate-950/80 border-t border-slate-800/80">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-sm text-gray-300">
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Josiah George</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Roshen John</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Alvin Sotter</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Alex Mani</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Joel Varughese</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Brayan Varghese</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Jalin Mathews</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Michael Mani</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Kevin Suresh</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Kevin Thomas</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- St. Thomas DMV -->
+        <details class="team-accordion bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group shadow-lg transition-all duration-200">
+          <summary class="flex items-center justify-between p-5 cursor-pointer font-norwester text-lg text-white uppercase select-none hover:bg-slate-800/60 transition">
+            <span class="flex items-center gap-3">
+              <span class="p-2 rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/20 text-base">🏀</span>
+              St. Thomas DMV
+            </span>
+            <svg class="w-5 h-5 text-amber-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="p-5 bg-slate-950/80 border-t border-slate-800/80">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-sm text-gray-300">
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Aidan Sajan</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Jonah Abraham</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Vibin Abraham</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Noah Mathews</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Matthew Saji</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Steven Saji</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Danny Saji</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Joshin Johnson</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Joel Varghese</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Aswin John</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Joel Varghese</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- St. Thomas Unruh -->
+        <details class="team-accordion bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group shadow-lg transition-all duration-200">
+          <summary class="flex items-center justify-between p-5 cursor-pointer font-norwester text-lg text-white uppercase select-none hover:bg-slate-800/60 transition">
+            <span class="flex items-center gap-3">
+              <span class="p-2 rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/20 text-base">🏀</span>
+              St. Thomas Unruh
+            </span>
+            <svg class="w-5 h-5 text-amber-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="p-5 bg-slate-950/80 border-t border-slate-800/80">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-sm text-gray-300">
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Felix Ronnie</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Jayden Mathew</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Alvin Jose</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Justin Ronnie</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Nishal Varghese</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Joshua Mathew</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Alan Joseph</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Joshua George</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Josh Job</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Abel Mathew</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- St. George Portchester/BWNBC -->
+        <details class="team-accordion bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group shadow-lg transition-all duration-200">
+          <summary class="flex items-center justify-between p-5 cursor-pointer font-norwester text-lg text-white uppercase select-none hover:bg-slate-800/60 transition">
+            <span class="flex items-center gap-3">
+              <span class="p-2 rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/20 text-base">🏀</span>
+              St. George Portchester/BWNBC
+            </span>
+            <svg class="w-5 h-5 text-amber-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="p-5 bg-slate-950/80 border-t border-slate-800/80">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-sm text-gray-300">
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Akhil Taranson</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Kevin Puthuran</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Shawn Cheriyan</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Genial Thomas</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Joshua George</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Jaiden Jacob</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Joel Manoj</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Dilan Jacob</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Elijah Mathew</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Jordan Varghese</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Shane Pothen</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- St. Gregorios Cherry Lane -->
+        <details class="team-accordion bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group shadow-lg transition-all duration-200">
+          <summary class="flex items-center justify-between p-5 cursor-pointer font-norwester text-lg text-white uppercase select-none hover:bg-slate-800/60 transition">
+            <span class="flex items-center gap-3">
+              <span class="p-2 rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/20 text-base">🏀</span>
+              St. Gregorios Cherry Lane
+            </span>
+            <svg class="w-5 h-5 text-amber-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="p-5 bg-slate-950/80 border-t border-slate-800/80">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-sm text-gray-300">
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Ashwin Mathai</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> James Kingpeter</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Kevin Kurian</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Jayden John</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Jerry Parackel</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Fr. Gregory Varghese</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Aiden Joshy</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Justin Varghese</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Ryan Chirayil</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Benn Thomas</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Benoy Thomas</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Kevin G. Kurian</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Shawn Abraham</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Joel Thomas</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- St. Thomas Houston -->
+        <details class="team-accordion bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group shadow-lg transition-all duration-200">
+          <summary class="flex items-center justify-between p-5 cursor-pointer font-norwester text-lg text-white uppercase select-none hover:bg-slate-800/60 transition">
+            <span class="flex items-center gap-3">
+              <span class="p-2 rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/20 text-base">🏀</span>
+              St. Thomas Houston
+            </span>
+            <svg class="w-5 h-5 text-amber-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="p-5 bg-slate-950/80 border-t border-slate-800/80">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-sm text-gray-300">
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Nicholas John</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Jaden Varghese</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Jeeven Joseph</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Josh Joseph</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Elijah Cherian</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Sean Zachariah</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Mathew Philip</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Aaron John</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Jeremiah John</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Jonah Abaraham</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- St. Thomas Long Island -->
+        <details class="team-accordion bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group shadow-lg transition-all duration-200">
+          <summary class="flex items-center justify-between p-5 cursor-pointer font-norwester text-lg text-white uppercase select-none hover:bg-slate-800/60 transition">
+            <span class="flex items-center gap-3">
+              <span class="p-2 rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/20 text-base">🏀</span>
+              St. Thomas Long Island
+            </span>
+            <svg class="w-5 h-5 text-amber-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </summary>
+          <div class="p-5 bg-slate-950/80 border-t border-slate-800/80">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-sm text-gray-300">
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Sanjith Thomas</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Alen Panackamuttam</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Noel Paul</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Jayden Paul</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Noah Jacob</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Justin Paul</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Sugin Subin</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Ajit Thomas</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Stanley Thomas</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Midhun Kuruvilla</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 text-xs">●</span> Sinu Jacob</li>
+            </ul>
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- CONTACT US SECTION -->
+    <section id="contacts" class="border border-slate-800 bg-slate-900 p-6 rounded-3xl overflow-hidden relative scroll-mt-24 shadow-2xl sm:p-8">
+      <div class="mx-auto max-w-3xl space-y-8">
+        <div>
+          <div class="text-center mb-6">
+            <span class="uppercase text-xs font-bold text-amber-400 border px-3 py-1 rounded-full tracking-widest bg-amber-500/10 border-amber-500/20">GET IN TOUCH</span>
+            <h3 class="uppercase font-black font-norwester tracking-wide mt-2 text-white sm:text-3xl text-2xl">CONTACT INFORMATION</h3>
+            <p class="text-gray-400 text-xs mt-1">Reach out to our committee leads directly or submit an inquiry below.</p>
+          </div>
+
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <a href="tel:2674322199" class="border border-slate-800 bg-slate-950 transition group rounded-2xl duration-200 flex gap-2 hover:bg-slate-900/80 hover:border-amber-500 items-center justify-center p-4 text-center">
+              <svg class="text-amber-500 group-hover:scale-110 h-5 transition-transform w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+              <span class="font-bold text-white group-hover:text-amber-400 text-sm transition-colors">Benjamin Mathew</span>
+            </a>
+
+            <a href="tel:5165028496" class="border border-slate-800 bg-slate-950 transition group rounded-2xl duration-200 flex gap-2 hover:bg-slate-900/80 hover:border-amber-500 items-center justify-center p-4 text-center">
+              <svg class="text-amber-500 group-hover:scale-110 h-5 transition-transform w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+              <span class="font-bold text-white group-hover:text-amber-400 text-sm transition-colors">Joel Thomas</span>
+            </a>
+
+            <a href="tel:2677091085" class="border border-slate-800 bg-slate-950 transition group rounded-2xl duration-200 flex gap-2 hover:bg-slate-900/80 hover:border-amber-500 items-center justify-center p-4 text-center">
+              <svg class="text-amber-500 group-hover:scale-110 h-5 transition-transform w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+              <span class="font-bold text-white group-hover:text-amber-400 text-sm transition-colors">Alan Joseph</span>
+            </a>
+          </div>
+        </div>
+
+        <hr class="border-slate-800" />
+
+        <form action="https://formsubmit.co/talmeedobasketball@gmail.com" method="POST" class="space-y-4">
+          <input type="hidden" name="_subject" value="New Inquiry from Talmeedo Tournament Website" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <label for="name" class="uppercase text-xs font-bold block mb-1 text-gray-300 tracking-wider">Your Name</label>
+              <input id="name" name="name" type="text" placeholder="John Doe" required class="border border-slate-800 bg-slate-950 transition focus:border-amber-500 focus:outline-none placeholder-gray-600 px-4 py-3 rounded-xl text-sm text-white w-full" />
+            </div>
+            <div>
+              <label for="email" class="uppercase text-xs font-bold block mb-1 text-gray-300 tracking-wider">Email Address</label>
+              <input id="email" name="email" type="email" placeholder="john@example.com" required class="border border-slate-800 bg-slate-950 transition focus:border-amber-500 focus:outline-none placeholder-gray-600 px-4 py-3 rounded-xl text-sm text-white w-full" />
+            </div>
+          </div>
+
+          <div>
+            <label for="parish" class="uppercase text-xs font-bold block mb-1 text-gray-300 tracking-wider">Parish / Organization (Optional)</label>
+            <input id="parish" name="parish" type="text" placeholder="St. Gregorios Orthodox Church, Queens, NY" class="border border-slate-800 bg-slate-950 transition focus:border-amber-500 focus:outline-none placeholder-gray-600 px-4 py-3 rounded-xl text-sm text-white w-full" />
+          </div>
+
+          <div>
+            <label for="message" class="uppercase text-xs font-bold block mb-1 text-gray-300 tracking-wider">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required class="border border-slate-800 bg-slate-950 transition focus:border-amber-500 focus:outline-none placeholder-gray-600 px-4 py-3 rounded-xl text-sm text-white w-full"></textarea>
+          </div>
+
+          <button type="submit" class="uppercase font-black transition cursor-pointer shadow-lg text-slate-950 transform bg-amber-500 glow-amber hover:-translate-y-0.5 hover:bg-amber-400 px-6 rounded-xl text-sm tracking-wider py-3.5 w-full">
+            SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-slate-950 border-slate-800 border-t mt-12 py-8">
+    <div class="mx-auto px-6 max-w-4xl space-y-4 text-center">
+      <div class="flex items-center space-x-6 justify-center">
+        <a href="https://fb.me/talmeedo" target="_blank" rel="noopener noreferrer" class="transition hover:scale-110">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="h-6 w-6" />
+        </a>
+        <span class="uppercase text-xs font-bold tracking-widest text-gray-400">FOLLOW US @TALMEEDO</span>
+        <a href="https://instagram.com/talmeedo" target="_blank" rel="noopener noreferrer" class="transition hover:scale-110">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" class="h-6 w-6" />
+        </a>
+      </div>
+      <p class="text-gray-500 text-xs">
+        © <span id="currentYear"></span> Talmeedo Men's Ministry of the 
+        <a href="https://neamericandiocese.org" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-400">Northeast American Diocese</a> 
+        of the 
+        <a href="https://mosc.in" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-400">Malankara Orthodox Syrian Church</a>.
+      </p>
     </div>
-    
-    <!-- Instagram Embed -->
-    <div class="w-full md:w-1/2 flex justify-center">
-      <iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0"
-        src="https://www.instagram.com/talmeedo/embed/" allowtransparency="true"
-        allowfullscreen="true" frameborder="0" height="581" scrolling="no"
-        style="background: white; max-width: 540px; width: 100%; border-radius: 3px;
-               border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block;
-               min-width: 326px; padding: 0px;">
-      </iframe>
-    </div>
-  </div>
-  
-<!-- About Talmeedo Section -->
-<section class="w-full max-w-4xl mx-auto px-6 py-8 bg-gray-800 rounded-lg shadow-lg mb-12 text-center">
-  <h2 class="text-2xl md:text-3xl font-bold text-amber-500 mb-6 font-norwester">
-    What is Talmeedo?
-  </h2>
-  <p class="text-lg text-gray-200 mb-4">
-    Talmeedo or Talmido in Syriac (ܬܰܠܡܝܼܕܳܐ) means disciple.
-  </p>
-</section>
+  </footer>
 
-<footer class="w-full bg-gray-800 py-6 mt-auto">
-<div class="max-w-4xl mx-auto text-center text-white">
-    <div class="flex justify-center items-center space-x-6 text-yellow-500 text-sm">
-      <!-- Facebook Icon -->
-      <a href="https://fb.me/talmeedo" target="_blank" class="hover:text-yellow-400">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="w-8 h-8 inline-block">
-      </a>
+  <!-- JAVASCRIPT -->
+  <script>
+    // Set dynamic footer copyright year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-      <!-- Follow Us Text -->
-      <span class="text-white font-semibold">Follow us @talmeedo</span>
+    // Mission Modal Dialog Handlers
+    const missionModal = document.getElementById('missionModal');
+    const openMissionBtn = document.getElementById('openMissionModal');
+    const closeMissionBtn = document.getElementById('closeMissionModal');
 
-      <!-- Instagram Icon -->
-      <a href="https://instagram.com/talmeedo" target="_blank" class="hover:text-yellow-400">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" class="w-8 h-8 inline-block">
-      </a>
-    </div>
-    <p class="mt-4 text-sm">
-    <a href="mailto:talmeedobasketball@gmail.com" class="text-yellow-500 hover:text-yellow-400">talmeedobasketball@gmail.com</a>
-    </p>
+    if (openMissionBtn && missionModal) {
+      openMissionBtn.addEventListener('click', () => missionModal.showModal());
+    }
+    if (closeMissionBtn && missionModal) {
+      closeMissionBtn.addEventListener('click', () => missionModal.close());
+    }
+    if (missionModal) {
+      missionModal.addEventListener('click', (event) => {
+        if (event.target === missionModal) {
+          missionModal.close();
+        }
+      });
+    }
 
-    <p class="mt-4 text-xs text-gray-400">
-      &copy; <span id="currentYear"></span> Talmeedo Men's Ministry of
-      <a href="https://neamericandiocese.org" target="_blank" class="underline hover:text-yellow-500">Northeast American Diocese</a> of the
-      <a href="https://mosc.in" target="_blank" class="underline hover:text-yellow-500">Malankara Orthodox Syrian Church</a>.
-    </p>
-</div>
-</footer><script>document.getElementById('currentYear').textContent = new Date().getFullYear();
-function updateCountdown() {
-  const now = new Date();
-  const eventDate = new Date('October 11, 2025 08:00:00'); // Target date/time
-  const diff = eventDate.getTime() - now.getTime();
+    // Full-Width Slide-Down Navigation Logic
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const iconHamburger = document.getElementById('icon-hamburger');
+    const iconClose = document.getElementById('icon-close');
+    const navLinks = document.querySelectorAll('.nav-link');
 
-  if (diff <= 0) {
-    document.getElementById('countdown').textContent = "The event is happening now or has passed!";
-    return;
-  }
+    function openMenu() {
+      navMenu.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
+      navMenu.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+      iconHamburger.classList.add('hidden');
+      iconClose.classList.remove('hidden');
+    }
 
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((diff / (1000 * 60)) % 60);
-  const seconds = Math.floor((diff / 1000) % 60);
+    function closeMenu() {
+      navMenu.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+      navMenu.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
+      iconHamburger.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+    }
 
-  document.getElementById('countdown').textContent =
-    `${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds until the tournament!`;
-}
+    menuToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = navMenu.classList.contains('translate-y-0');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
 
-// Initial call
-updateCountdown();
-// Update every second
-setInterval(updateCountdown, 1000);
-</script><script async src="//www.instagram.com/embed.js"></script></body></html>
+    // Close navigation menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        closeMenu();
+      }
+    });
+
+    // Smooth scroll and auto-close menu when clicking links
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        const targetId = link.getAttribute('href');
+        if (targetId.startsWith('#')) {
+          e.preventDefault();
+          const targetSection = document.querySelector(targetId);
+          closeMenu();
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    });
+
+    // Accordion behavior: ensure only one team details element is open at a time
+    const teamAccordions = document.querySelectorAll('.team-accordion');
+    teamAccordions.forEach((accordion) => {
+      accordion.addEventListener('toggle', () => {
+        if (accordion.open) {
+          teamAccordions.forEach((other) => {
+            if (other !== accordion && other.open) {
+              other.open = false;
+            }
+          });
+        }
+      });
+    });
+
+    // Countdown Timer logic
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const eventDate = new Date('November 14, 2026 08:00:00').getTime();
+      const diff = eventDate - now;
+
+      if (diff <= 0) {
+        document.getElementById('countdown-container').classList.add('hidden');
+        document.getElementById('countdown-status').classList.remove('hidden');
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById('days').textContent = String(days).padStart(2, '0');
+      document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+
+  <script src="//www.instagram.com/embed.js" async></script>
+</body>
+</html>
