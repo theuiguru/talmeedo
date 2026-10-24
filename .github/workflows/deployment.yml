@@ -14,10 +14,10 @@ jobs:
           node-version: 18
       - run: npm install -g surge
       
-      # Deploy to your custom domain using the CNAME file
-      - name: Deploy to talmeedo.org
-        run: surge ./ --token ${{ secrets.SURGE_TOKEN }}
+      # Dynamically reads the domain inside the CNAME file
+      - name: Deploy to CNAME domain
+        run: surge ./ $(cat CNAME) --token ${{ secrets.SURGE_TOKEN }}
         
-      # Deploy to your Surge domain secret (e.g., talmeedobasketball.surge.sh)
+      # Deploy to your Surge subdomain secret
       - name: Deploy to Surge subdomain secret
         run: surge ./ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
