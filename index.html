@@ -894,30 +894,54 @@
 
         <hr class="border-slate-800" />
 
-        <form action="https://formsubmit.co/talmeedo@neamericandiocese.org" method="POST" class="space-y-4">
+        <form action="https://formsubmit.co/talmeedo@neamericandiocese.org" method="POST" class="space-y-5">
           <input type="hidden" name="_subject" value="New Inquiry from Talmeedo Tournament Website" />
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_template" value="table" />
 
+          <!-- NAME & EMAIL -->
           <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
-              <label for="name" class="uppercase text-xs font-bold block mb-1 text-gray-300 tracking-wider">Your Name</label>
+              <label for="name" class="uppercase text-xs font-bold block mb-1 text-gray-300 tracking-wider">Your Name <span class="text-amber-500">*</span></label>
               <input id="name" name="name" type="text" placeholder="John Doe" required class="border border-slate-800 bg-slate-950 transition focus:border-amber-500 focus:outline-none placeholder-gray-600 px-4 py-3 rounded-xl text-sm text-white w-full" />
             </div>
             <div>
-              <label for="email" class="uppercase text-xs font-bold block mb-1 text-gray-300 tracking-wider">Email Address</label>
+              <label for="email" class="uppercase text-xs font-bold block mb-1 text-gray-300 tracking-wider">Email Address <span class="text-amber-500">*</span></label>
               <input id="email" name="email" type="email" placeholder="john@example.com" required class="border border-slate-800 bg-slate-950 transition focus:border-amber-500 focus:outline-none placeholder-gray-600 px-4 py-3 rounded-xl text-sm text-white w-full" />
             </div>
           </div>
 
+          <!-- PARISH / ORGANIZATION -->
           <div>
-            <label for="parish" class="uppercase text-xs font-bold block mb-1 text-gray-300 tracking-wider">Parish / Organization (Optional)</label>
-            <input id="parish" name="parish" type="text" placeholder="St. Gregorios Orthodox Church" class="border border-slate-800 bg-slate-950 transition focus:border-amber-500 focus:outline-none placeholder-gray-600 px-4 py-3 rounded-xl text-sm text-white w-full" />
+            <label for="parish" class="uppercase text-xs font-bold block mb-1 text-gray-300 tracking-wider">Parish / Organization <span class="text-amber-500">*</span></label>
+            <input id="parish" name="parish" type="text" placeholder="St. Gregorios Orthodox Church" required class="border border-slate-800 bg-slate-950 transition focus:border-amber-500 focus:outline-none placeholder-gray-600 px-4 py-3 rounded-xl text-sm text-white w-full" />
           </div>
 
+          <!-- AGE RANGE RADIO GROUP -->
+          <fieldset class="space-y-2 border border-slate-800 bg-slate-950/60 p-4 rounded-xl">
+            <legend class="uppercase text-xs font-bold text-gray-300 tracking-wider px-1">Age Range <span class="text-amber-500">*</span></legend>
+            <div class="grid grid-cols-1 gap-2.5 sm:grid-cols-3 pt-1">
+              <label class="flex items-center gap-3 border border-slate-800 bg-slate-950 p-3 rounded-xl cursor-pointer transition hover:border-amber-500/50 has-[:checked]:border-amber-500 has-[:checked]:bg-amber-500/10">
+                <input type="radio" name="age_range" value="High school / College" required class="h-4 w-4 accent-amber-500 bg-slate-900 border-slate-700 focus:ring-amber-500" />
+                <span class="text-sm font-medium text-gray-200">High school / College</span>
+              </label>
+
+              <label class="flex items-center gap-3 border border-slate-800 bg-slate-950 p-3 rounded-xl cursor-pointer transition hover:border-amber-500/50 has-[:checked]:border-amber-500 has-[:checked]:bg-amber-500/10">
+                <input type="radio" name="age_range" value="Post college to 30" required class="h-4 w-4 accent-amber-500 bg-slate-900 border-slate-700 focus:ring-amber-500" />
+                <span class="text-sm font-medium text-gray-200">Post college to 30</span>
+              </label>
+
+              <label class="flex items-center gap-3 border border-slate-800 bg-slate-950 p-3 rounded-xl cursor-pointer transition hover:border-amber-500/50 has-[:checked]:border-amber-500 has-[:checked]:bg-amber-500/10">
+                <input type="radio" name="age_range" value="31+" required class="h-4 w-4 accent-amber-500 bg-slate-900 border-slate-700 focus:ring-amber-500" />
+                <span class="text-sm font-medium text-gray-200">31+</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- MESSAGE (OPTIONAL) -->
           <div>
-            <label for="message" class="uppercase text-xs font-bold block mb-1 text-gray-300 tracking-wider">Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required class="border border-slate-800 bg-slate-950 transition focus:border-amber-500 focus:outline-none placeholder-gray-600 px-4 py-3 rounded-xl text-sm text-white w-full"></textarea>
+            <label for="message" class="uppercase text-xs font-bold block mb-1 text-gray-300 tracking-wider">Message (Optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="How can we help you?" class="border border-slate-800 bg-slate-950 transition focus:border-amber-500 focus:outline-none placeholder-gray-600 px-4 py-3 rounded-xl text-sm text-white w-full"></textarea>
           </div>
 
           <button type="submit" class="uppercase font-black transition cursor-pointer shadow-lg text-slate-950 transform bg-amber-500 glow-amber hover:-translate-y-0.5 hover:bg-amber-400 px-6 rounded-xl text-sm tracking-wider py-3.5 w-full">
